@@ -1,0 +1,28 @@
+<html>
+<head>
+	<title>Ordering Product</title>
+</head>
+<body>
+	<table>
+		<fieldset>
+		<legend>Order Now</legend>
+        <form method="post" action="orderproduct.php" enctype="">
+        
+            <label for="type">Choose Product Name : </label><br>
+            <select name="p_name" id="type" >
+                <option value="Fruits">Fruits</option>
+                <option value="Milk">Milk</option>
+                <option value="Vegetable">Vegetable</option>
+                <option value="Meat">Meat</option>
+            </select><br>
+
+		Quantity <br><input type="number" name="p_quantity" value="1"><br>
+		Price <br><input type="number" name="p_price" value=""><br>
+		
+        <br>
+		<input type="submit" name="submit" value="Confirm Order">
+	</form>
+</fieldset>
+</table>
+</body>
+</html>
