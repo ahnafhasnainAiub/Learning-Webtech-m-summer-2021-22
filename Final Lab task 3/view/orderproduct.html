@@ -1,0 +1,51 @@
+<html>
+<head>
+	<title>Ordering Product</title>
+</head>
+<body>
+	<table>
+		<fieldset>
+		<legend><h1>Order Now</h1>></legend>
+        <form name="orderL" action="" onsubmit="return validList()" method="post" 
+        
+            <label for="type">Choose Product Name : </label><br>
+            <select name="p_name" id="type" >
+                <option value="Fruits">Fruits</option>
+                <option value="Milk">Milk</option>
+                <option value="Vegetable">Vegetable</option>
+                <option value="Meat">Meat</option>
+            </select><br>
+
+		Quantity <br><input type="number" name="p_quantity" id="p_quantity" value=""><br>
+		Price <br><input type="number" name="p_price" id="p_price" value=""><br>
+		
+        <br>
+		<input type="submit" name="submit" value="Confirm Order">
+	</form>
+</fieldset>
+</table>
+   <script> 
+
+      function validList(){
+
+
+        let name = document.getElementById('type').value;
+        let quantity = document.getElementById('p_quantity').value;
+        let price = document.getElementById('p_price').value;
+        let Check;
+       if(name== "" || quantity=="" || price==""){
+        document.getElementById("show").innerHTML = "Choose product, Quantity and Price";
+        return false;
+    }
+    else{
+        document.getElementById("show").innerHTML = "Submitted";
+        return true;
+        
+    }
+ }
+
+   </script>
+   
+
+</body>
+</html>
